@@ -1,0 +1,29 @@
+{
+    "name": "knockout-emoji",
+    "version": "0.0.0",
+    "authors": [
+        "Alex Bardanov <dnbard@gmail.com>"
+    ],
+    "description": "Emoji bindings for knockoutjs",
+    "moduleType": [
+        "amd",
+        "globals"
+      ],
+    "keywords": [
+        "knockoutjs",
+        "knockout",
+        "binding",
+        "emoji"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies":{
+        "knockoutjs": "latest"
+    }
+}

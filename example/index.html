@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script type="text/javascript" src="../bower_components/knockoutjs/dist/knockout.debug.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="../src/knockout-emoji.js"></script>
+    </head>
+    <body>
+    <div data-bind="emoji: 'tulip'"></div>
+
+    <div data-bind="emojis: true">
+        <!--<div>lorem lorem :trophy: lorem</div>
+        <div>:lorem lorem trophy: lorem</div>-->
+        <div>:lorem lorem :trophy: lorem</div>
+    </div>
+
+        <script>
+            ko.bindingHandlers.emoji.config({
+                css: '../src/sprites.css',
+                path: '../example/sprites.png',
+                searchInText: true
+            });
+            ko.applyBindings({});
+        </script>
+    </body>
+</html>
