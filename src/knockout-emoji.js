@@ -9,7 +9,10 @@
 
     var forcePath = null,
         proceedInText = false,
-        emojiList = ##emoji-list;
+        //##emoji-list are replaced through the build process
+        //if you see error here, you should type `grunt` and use
+        //knockout-emoji.js from `build/` folder.
+        emojiList = [##emoji-list];
 
     function setupBindings(config){
         if (!config){
